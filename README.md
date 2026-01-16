@@ -145,10 +145,10 @@ c.ServerApp.allow_root = True # 非 root 用户启动，无需修改
 c.ServerApp.ip = '*'
 ```
 
-使用 nohup 后台启动 Jupyter Lab
+使用 nohup 后台启动 Jupyter Lab，默认的Token是PASSWORD
 ```shell
-# 其中llm123，表示Jupyter Lab登录时输入的Token，可以替换为你自定义的Token
-$ nohup jupyter lab --port=8000 --NotebookApp.token='llm123' --notebook-dir=./ &
+# 其中PASSWORD，表示Jupyter Lab登录时输入的Token，可以替换为你自定义的Token
+$ nohup jupyter lab --port=8000 --NotebookApp.token='PASSWORD' --notebook-dir=./ &
 ```
 
 
